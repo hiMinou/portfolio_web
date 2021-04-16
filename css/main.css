@@ -1,0 +1,109 @@
+/*____GoogleFonts____*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+/*____déclaration des variables css____*/
+
+:root{
+  --header-height: 3rem;
+  --font-semi: 600;
+}
+/*____Les couleurs____*/
+:root{
+  --first-color: #4070F4;
+  --second-color: #0E2431;
+}
+
+/*____style et tailles de la typographie____*/
+:root{
+  --body-font:'Poppins', sans-sherif;
+  --big-font-size: 2rem;
+  --h2-font-size: 2rem;
+  --normal-font-size: 1rem;
+}
+@media screen and (min-width: 768px){
+  :root{
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+  }
+}
+
+/*____bordures____*/
+:root{
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+
+/*____z index____*/
+:root{
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*____base____*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+}
+h1,h2,p{
+  margin:0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/*____class css____*/
+.section-title{
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(mb-4)
+  text-align: center;
+}
+.section-title::after{
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.18rem;
+  left:0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+.section{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+
+
+/*____layout____*/
+
+
+/*____nav____*/
+
+
+/*____active menu____*/
