@@ -1,5 +1,5 @@
 /*____GoogleFonts____*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
 /*____déclaration des variables css____*/
@@ -18,7 +18,7 @@
 :root{
   --body-font:'Poppins', sans-sherif;
   --big-font-size: 2rem;
-  --h2-font-size: 2rem;
+  --h2-font-size: 1rem;
   --normal-font-size: 1rem;
 }
 @media screen and (min-width: 768px){
@@ -79,7 +79,7 @@ img{
   font-size: var(--h2-font-size);
   color: var(--first-color);
   margin-top: var(--mb-2);
-  margin-bottom: var(mb-4)
+  margin-bottom: var(--mb-4);
   text-align: center;
 }
 .section-title::after{
@@ -185,7 +185,128 @@ img{
 }
 
 /*____le home____*/
-
-
+.home{
+  height: calc(100vh - 3rem);
+  row-gap: 1rem;
+}
+.home__data{
+  align-self: center;
+}
+.home__title{
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-5);
+}
+.home__title-color{
+  color: var(--first-color);
+}
+.home__social{
+  display:flex;
+  flex-direction: column;
+}
+.home__social-icon{
+  width: max-content;
+  margin-bottom: var(--mb-2);
+  font-size: 1.5rem;
+  color: var(--second-color);
+}
+.home__social-icon:hover{
+  color: var(--first-color);
+}
+.home__img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 295px;
+}
 
 /*____les bouttons____*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .75rem;
+}
+.button:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
+
+
+/*____A propos____*/
+.about__container{
+  row-gap: 2rem;
+  text-align: center;
+}
+.about__subtitle{
+  margin-bottom: var(--mb-2);
+}
+.about__img{
+  display: flex;
+  justify-content: center;
+}
+.about__img img{
+  width: 200px;
+  border-radius: .5rem;
+}
+
+/*____Skills____*/
+.skills__container{
+  row-gap: 2rem;
+  text-align: center;
+}
+.skills__subtitle{
+  margin-bottom: var(--mb-2);
+}
+.skills__text{
+  margin-bottom: var(--mb-4);
+}
+.skills__data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .5rem 1rem;
+  margin-bottom: var(--mb-4);
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+}
+.skills__icon{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: var(--first-color);
+}
+.skills__names{
+  display: flex;
+  justify-content: center;
+}
+.skills__bar{
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--first-color);
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: var(--z-back);
+}
+
+.skills__html{
+  width: 95%;
+}
+.skills__css{
+  width: 80%;
+}
+.skills__js{
+  width: 75%;
+}
+.skills__react{
+  width: 50%;
+}
+.skills__img{
+  border-radius: .5rem;
+}
+/*____contact____*/
+
+
+
+/*____footer___*/
