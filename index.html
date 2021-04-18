@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
 
-    <title>MINOU MATOKO</title>
+    <title>youngDev.fr</title>
     <!--_____box icons cdn _______--->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
@@ -19,11 +19,11 @@
         </div>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav_item"><a href="#" class="nav__link active">Home</a> </li>
-            <li class="nav_item"><a href="#" class="nav__link">A propos</a> </li>
-            <li class="nav_item"><a href="#" class="nav__link">Compétences</a> </li>
-            <li class="nav_item"><a href="#" class="nav__link">Projets</a></li>
-            <li class="nav_item"><a href="#" class="nav__link">Contact</a> </li>
+            <li class="nav_item"><a href="#home" class="nav__link active">Home</a> </li>
+            <li class="nav_item"><a href="#about" class="nav__link">A propos</a> </li>
+            <li class="nav_item"><a href="#skills" class="nav__link">Compétences</a> </li>
+            <li class="nav_item"><a href="#work" class="nav__link">Projets</a></li>
+            <li class="nav_item"><a href="#contact" class="nav__link">Contact</a> </li>
           </ul>
         </div>
 
@@ -39,8 +39,7 @@
       <!--_______home_________-->
       <section class="home bd-grid" id="home">
         <div class="home__data">
-          <h1 class="home__title">Salut, <br>je suis <span class="home__title-color">Minou</span> <br>
-          Developpeur Web </h1>
+          <h1 class="home__title">Salut, <br>je suis <span class="home__title-color">Minou!</span> <br> étudiant en informatique </h1>
           <a href="#" class="button">Contact</a>
         </div>
         <div class="home__social">
@@ -118,19 +117,6 @@
           </div>
         </div>
 
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class="bx bxl-react skills__icon"></i>
-            <span class="skills__name">REACTJS</span>
-          </div>
-          <div>
-            <span class="skills__percentage">50%</span>
-          </div>
-          <div class="skills__bar skills__react">
-
-          </div>
-        </div>
-
     </div>
     <div>
       <img src="img/work-img.jpg" alt="work-img" class="skills__img">
@@ -138,20 +124,64 @@
   </div>
 </section>
 
-<!--_______A propos_________-->
+<!--_______Mes projets_________-->
+<section class="work section" id="work">
+  <h2 class="section_title">Mes Projets</h2>
+
+  <div class="work__container bd-grid">
+    <div class="work__img">
+      <img src="img/work1.jpg" alt="work-image">
+    </div>
+    <div class="work__img">
+      <img src="img/work2.jpg" alt="work-image">
+    </div>
+    <div class="work__img">
+      <img src="img/work3.jpg" alt="work-image">
+    </div>
+    <div class="work__img">
+      <img src="img/work4.jpg" alt="work-image">
+    </div>
+    <div class="work__img">
+      <img src="img/work5.jpg" alt="work-image">
+    </div>
+    <div class="work__img">
+      <img src="img/work6.jpg" alt="work-image">
+    </div>
+
+  </div>
 
 
 
-<!--_______A propos_________-->
 
+<!--_______contact_________-->
+<section class="contact section" id="contact">
+  <h2 class="section-title">Contact</h2>
 
-    <!--_______FOOTER_________-->
+  <div class="contact__container bd-grid">
+    <form class="contact__form" action="index.html" method="post">
+      <input class="contact__input" type="text" name="nom" value="Nom" placeholder="Entrez votre nom!">
+      <input class="contact__input" type="text" name="mail" value="Email" placeholder="Entrez votre email!">
+      <textarea class="contact__input" id="" name="name" rows="10" cols="0"></textarea>
+      <input class="contact__button button" action=""type="button" value="Envoyer">
+    </form>
+  </div>
+</section>
 
+<!--_______FOOTER_________-->
+  <footer class="footer">
+    <p class="footer__title">YoungDev</p>
 
-    <!--_______scrollreavel script_________-->
+    <div class="footer__social">
+      <a href="#" class="footer__icon"> <i class="bx bxl-facebook"></i> </a>
+      <a href="#" class="footer__icon"> <i class="bx bxl-instagram"></i> </a>
+      <a href="#" class="footer__icon"> <i class="bx bxl-twitter"></i> </a>
+    </div>
+    <p>&#169; Minou Matoko 2021 Tous droits reservés.</p>
+  </footer>
+
+  <!--_______scrollreavel script_________-->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--_______mains js_________-->
+  <!--_______mains js_________-->
     <script src="js/main.js" type="text/javascript"></script>
   </body>
 </html>
